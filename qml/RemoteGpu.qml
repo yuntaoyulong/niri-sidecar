@@ -52,6 +52,7 @@ Item {
         required property var metric
         spacing: 5
         Text {
+        textFormat: Text.PlainText
             width: parent.width
             text: meter.metric.title
             color: root.foreground
@@ -59,6 +60,7 @@ Item {
             elide: Text.ElideRight
         }
         Text {
+        textFormat: Text.PlainText
             width: parent.width
             text: meter.metric.detail
             color: root.foreground
@@ -84,6 +86,7 @@ Item {
                         Behavior on width { NumberAnimation { duration: 220; easing.type: Easing.OutCubic } }
                     }
                     Text {
+        textFormat: Text.PlainText
                         anchors.centerIn: parent
                         text: parent.modelData.label + " " + root.percent(parent.modelData.value) + "%"
                         color: root.foreground
@@ -153,6 +156,7 @@ Item {
                         spacing: 12
                         visible: panel.expanded
                         Text {
+        textFormat: Text.PlainText
                             width: parent.width
                             text: root.selectedHost().host || "SSH remote resources"
                             color: root.accent
@@ -160,6 +164,7 @@ Item {
                             elide: Text.ElideMiddle
                         }
                         Text {
+        textFormat: Text.PlainText
                             width: parent.width
                             visible: !!root.selectedHost().error
                             text: root.selectedHost().error || ""
@@ -182,6 +187,7 @@ Item {
                             }
                         }
                         Text {
+        textFormat: Text.PlainText
                             text: "GPU / VRAM / CPU / RAM / Disk"
                             color: root.foreground
                             font.pixelSize: 10
@@ -227,6 +233,7 @@ Item {
                                             width: 48
                                             spacing: 3
                                             Text {
+        textFormat: Text.PlainText
                                                 width: parent.width
                                                 text: modelData.title
                                                 color: root.accent
@@ -250,11 +257,13 @@ Item {
                                                     anchors.centerIn: parent
                                                     spacing: 2
                                                     Text {
+        textFormat: Text.PlainText
                                                         text: modelData.icon
                                                         color: root.foreground
                                                         font { family: "Material Icons"; pixelSize: 13 }
                                                     }
                                                     Text {
+        textFormat: Text.PlainText
                                                         text: root.percent(modelData.value) + "%"
                                                         color: root.foreground
                                                         font { family: root.state.font || "sans-serif"; pixelSize: 10 }

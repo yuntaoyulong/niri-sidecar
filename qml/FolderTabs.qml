@@ -53,6 +53,7 @@ Item {
                             border.color: modelData.shown ? root.state.primary || "white" : root.state.outline || "transparent"
                             border.width: 1
                             Text {
+        textFormat: Text.PlainText
                                 id: label
                                 anchors { left: parent.left; leftMargin: 8; right: parent.right; rightMargin: 8; verticalCenter: parent.verticalCenter }
                                 text: "▱  " + tab.modelData.title

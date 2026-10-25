@@ -6,6 +6,7 @@ import Quickshell.Wayland
 PanelWindow {
     id: panel
     component TaskText: Text {
+        textFormat: Text.PlainText
         font.family: panel.fontFamily
         font.pixelSize: 13
         font.hintingPreference: Font.PreferFullHinting
@@ -80,6 +81,7 @@ PanelWindow {
             color: panel.dockBackground
             border { width: 1; color: panel.outlineColor }
             TaskText {
+        textFormat: Text.PlainText
                 id: heading
                 anchors { top: parent.top; left: parent.left; margins: 12 }
                 text: panel.panelTitle
@@ -87,6 +89,7 @@ PanelWindow {
                 font { pixelSize: 14; bold: true }
             }
             TaskText {
+        textFormat: Text.PlainText
                 id: subtitle
                 anchors { top: heading.bottom; topMargin: 7; left: heading.left; right: parent.right; rightMargin: 12 }
                 text: panel.error || "Hover to inspect · Click to focus"
@@ -109,6 +112,7 @@ PanelWindow {
                     radius: 6
                     color: pointer.containsMouse ? "#28ffffff" : (modelData.focused ? "#1cffffff" : "transparent")
                     TaskText {
+        textFormat: Text.PlainText
                         id: title
                         anchors { top: parent.top; topMargin: 9; left: parent.left; leftMargin: 9; right: parent.right; rightMargin: 9 }
                         text: task.modelData.title
@@ -117,6 +121,7 @@ PanelWindow {
                         elide: Text.ElideRight
                     }
                     TaskText {
+        textFormat: Text.PlainText
                         anchors { top: title.bottom; topMargin: 6; left: title.left }
                         text: (task.modelData.running ? "● running" : "○ idle") + "  ·  workspace " + task.modelData.workspace
                         color: task.modelData.running ? panel.accentColor : panel.textColor
@@ -142,7 +147,8 @@ PanelWindow {
             width: 100; height: 30; radius: 7
             color: panel.dockBackground
             border { width: 1; color: panel.outlineColor }
-            TaskText { anchors.centerIn: parent; text: panel.pillLabel + "  " + panel.tasks.length; color: panel.textColor }
+            TaskText {
+        textFormat: Text.PlainText anchors.centerIn: parent; text: panel.pillLabel + "  " + panel.tasks.length; color: panel.textColor }
         }
     }
 }

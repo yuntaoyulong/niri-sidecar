@@ -17,6 +17,8 @@ OpenSSH handles credentials. The program does not parse private-key files, copy 
 
 `privacy.redact_hosts` is on by default: usernames, SSH destination labels and remote hostnames are replaced in the resource UI/JSON. GPU/CPU models, mount paths, local file names and window titles are not anonymised. Turning host redaction off exposes those addresses locally; it still does not upload them.
 
+Window titles, filenames and metric labels are rendered as plain text. Qt’s default auto-rich-text detection can load images from markup, so Sidecar explicitly disables it for these fields; see the [Qt Text documentation](https://doc.qt.io/qt-6/qml-qtquick-text.html).
+
 ## Local paths
 
 - Configuration: `$XDG_CONFIG_HOME/niri-sidecar/config.json` (normally `~/.config/...`).

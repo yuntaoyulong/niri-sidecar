@@ -92,6 +92,7 @@ PanelWindow {
             radius: 10
             border { width: 1; color: panel.outlineColor }
             Text {
+        textFormat: Text.PlainText
                 id: heading
                 anchors { top: parent.top; left: parent.left; margins: 12 }
                 text: panel.filesOnly ? "Files" : "Clipboard pins"
@@ -102,10 +103,12 @@ PanelWindow {
                 anchors { top: parent.top; right: parent.right; margins: 9 }
                 width: 100; height: 28; radius: 6
                 color: pinHover.containsMouse ? "#28ffffff" : "#15ffffff"
-                Text { anchors.centerIn: parent; text: panel.busy ? "Working…" : "+ Pin current"; color: panel.textColor; font.pixelSize: 12 }
+                Text {
+        textFormat: Text.PlainText anchors.centerIn: parent; text: panel.busy ? "Working…" : "+ Pin current"; color: panel.textColor; font.pixelSize: 12 }
                 MouseArea { id: pinHover; anchors.fill: parent; hoverEnabled: true; enabled: !panel.busy; onClicked: panel.act(panel.filesOnly ? "pin-files" : "pin", "") }
             }
             Text {
+        textFormat: Text.PlainText
                 id: currentLabel
                 anchors { top: heading.bottom; topMargin: 12; left: parent.left; right: parent.right; leftMargin: 12; rightMargin: 12 }
                 text: panel.message || ("Current: " + (panel.current || "Reading…"))
@@ -113,12 +116,14 @@ PanelWindow {
                 elide: Text.ElideRight
             }
             Text {
+        textFormat: Text.PlainText
                 id: help
                 anchors { top: currentLabel.bottom; topMargin: 5; left: parent.left; leftMargin: 12 }
                 text: "Click to copy · Right-click to unpin"
                 color: "#b6c4ae"; font.pixelSize: 10
             }
             Text {
+        textFormat: Text.PlainText
                 visible: panel.shownEntries.length === 0
                 anchors { centerIn: parent }
                 text: panel.filesOnly ? "Copy files in a file manager, then choose Pin current." : "Copy content, then choose Pin current."
@@ -153,6 +158,7 @@ PanelWindow {
                         Image { anchors.fill: parent; anchors.margins: 2; source: card.modelData.preview; fillMode: Image.PreserveAspectFit; sourceSize { width: 136; height: 140 }
                             asynchronous: true }
                         Text {
+        textFormat: Text.PlainText
                             visible: !card.modelData.preview
                             anchors.centerIn: parent
                             text: ({text:"TXT",link:"LINK",files:"FILE",image:"IMG"})[card.modelData.kind] || "PIN"
@@ -160,12 +166,14 @@ PanelWindow {
                         }
                     }
                     Text {
+        textFormat: Text.PlainText
                         id: title
                         anchors { left: parent.left; leftMargin: 86; right: parent.right; rightMargin: 9; top: parent.top; topMargin: 8 }
                         text: card.modelData.title; color: panel.textColor; font { pixelSize: 12; bold: true }
                         elide: Text.ElideRight
                     }
                     Text {
+        textFormat: Text.PlainText
                         anchors { left: title.left; right: title.right; top: title.bottom; topMargin: 4 }
                         text: card.modelData.detail.replace(/\n/g, "  ")
                         color: panel.textColor; font.pixelSize: 11; elide: Text.ElideRight
@@ -179,7 +187,8 @@ PanelWindow {
                                 required property string modelData
                                 width: 48; height: 24; radius: 5
                                 color: actionHover.containsMouse ? "#30ffffff" : "#16ffffff"
-                                Text { anchors.centerIn: parent; text: parent.modelData; color: panel.textColor; font.pixelSize: 11 }
+                                Text {
+        textFormat: Text.PlainText anchors.centerIn: parent; text: parent.modelData; color: panel.textColor; font.pixelSize: 11 }
                                 MouseArea { id: actionHover; anchors.fill: parent; hoverEnabled: true; enabled: !panel.busy; onClicked: panel.act(parent.modelData === "Annotate" ? "edit" : "show", card.modelData.id) }
                             }
                         }
@@ -193,7 +202,8 @@ PanelWindow {
             width: panel.filesOnly ? 88 : 98; height: 30; radius: 7
             color: panel.dockBackground
             border { width: 1; color: panel.outlineColor }
-            Text { anchors.centerIn: parent; text: (panel.filesOnly ? "Files  " : "PIN  ") + panel.shownEntries.length; color: panel.textColor; font.pixelSize: 13 }
+            Text {
+        textFormat: Text.PlainText anchors.centerIn: parent; text: (panel.filesOnly ? "Files  " : "PIN  ") + panel.shownEntries.length; color: panel.textColor; font.pixelSize: 13 }
         }
     }
 }
