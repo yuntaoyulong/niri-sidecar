@@ -28,3 +28,13 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  qml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends qt6-declarative-dev-tools
+      - name: Parse every QML component
+        run: |
+          for file in qml/*.qml; do
+            /usr/lib/qt6/bin/qmlformat "$file" > /dev/null
+          done
