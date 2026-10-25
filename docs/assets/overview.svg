@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="640" viewBox="0 0 1440 640" role="img" aria-labelledby="title desc">
+<title id="title">Niri Sidecar</title>
+<desc id="desc">An illustrated desktop with synthetic GPU resources, task selectors and file pins. No real user data.</desc>
+<rect width="1440" height="640" rx="24" fill="#161522" />
+<g transform="translate(40 33)"><rect width="32" height="32" rx="9" fill="#d1bcfd" /><rect x="8" y="7" width="6" height="18" rx="2" fill="#302544" /><rect x="18" y="12" width="6" height="13" rx="2" fill="#302544" /><text x="48" y="24" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="600">Niri Sidecar</text><text x="1150" y="22" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">NIRI · QUICKSHELL · LOCAL</text></g>
+<text x="48" y="142" font-size="43" font-weight="700" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif">Your work, at the edge.</text>
+<text x="48" y="181" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="17">Watch remote hardware. Return to the right window.</text>
+<text x="48" y="208" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="17">Keep useful files one hover away.</text>
+<g transform="translate(48 258)">
+ <rect width="280" height="212" rx="15" fill="#272333" fill-opacity=".82" stroke="#5a4d71" stroke-width="1" />
+ <text x="19" y="32" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="600">Files within reach</text>
+ <text x="19" y="59" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">Explicit pins · local references</text>
+ <g transform="translate(18 78)"><rect width="244" height="49" rx="8" fill="#ffffff" fill-opacity=".06" /><path d="M12 14h10l4 4h17v20H12z" fill="#d1bcfd" /><text x="54" y="30" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="17">example.pdf</text></g>
+ <g transform="translate(18 137)"><rect width="244" height="49" rx="8" fill="#ffffff" fill-opacity=".06" /><path d="M12 14h10l4 4h17v20H12z" fill="#d1bcfd" /><text x="54" y="30" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="17">notes.md</text></g>
+</g>
+<g transform="translate(354 258)">
+ <rect width="492" height="212" rx="15" fill="#272333" fill-opacity=".82" stroke="#5a4d71" stroke-width="1" />
+ <text x="19" y="32" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="600">Window &amp; task selectors</text>
+ <text x="19" y="59" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">Across workspaces · exact window focus</text>
+ <rect x="18" y="79" width="456" height="49" rx="8" fill="#ffffff" fill-opacity=".06" /><circle cx="36" cy="103" r="5" fill="#b8dba0" /><text x="52" y="108" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="17">Train sample model</text><text x="362" y="108" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">Workspace 2</text>
+ <rect x="18" y="138" width="456" height="49" rx="8" fill="#ffffff" fill-opacity=".06" /><circle cx="36" cy="162" r="5" fill="#a7a1b3" /><text x="52" y="167" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="17">Review a patch</text><text x="362" y="167" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">Workspace 3</text>
+</g>
+<g transform="translate(872 112)">
+ <rect width="520" height="358" rx="15" fill="#272333" fill-opacity=".82" stroke="#5a4d71" stroke-width="1" />
+ <text x="20" y="34" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="600">Remote 1</text><text x="20" y="61" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">Read-only SSH metrics · anonymous by default</text>
+ <text x="20" y="104" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="17">NVIDIA A100 80 GB</text><text x="20" y="131" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">40 / 80 GiB VRAM</text>
+ <rect x="20" y="150" width="480" height="22" rx="5" fill="#ffffff" fill-opacity=".06" /><rect x="20" y="150" width="374" height="22" rx="5" fill="#9382c4" /><text x="220" y="166" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">GPU 78%</text>
+ <text x="20" y="209" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="14">CPU · 16-core quota</text><text x="284" y="209" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="14">RAM · 128 GiB quota</text>
+ <rect x="20" y="224" width="220" height="21" rx="5" fill="#ffffff" fill-opacity=".06" /><rect x="20" y="224" width="75" height="21" rx="5" fill="#9382c4" /><text x="110" y="240" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">34%</text>
+ <rect x="280" y="224" width="220" height="21" rx="5" fill="#ffffff" fill-opacity=".06" /><rect x="280" y="224" width="55" height="21" rx="5" fill="#9382c4" /><text x="370" y="240" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">25%</text>
+ <text x="20" y="283" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="14">System disk · 100 GiB</text><rect x="20" y="298" width="480" height="21" rx="5" fill="#ffffff" fill-opacity=".06" /><rect x="20" y="298" width="96" height="21" rx="5" fill="#9382c4" /><text x="220" y="314" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">20%</text>
+</g>
+<g transform="translate(48 504)">
+ <rect width="1344" height="88" rx="15" fill="#272333" fill-opacity=".82" stroke="#5a4d71" stroke-width="1" />
+ <text x="18" y="34" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">FILES</text><rect x="18" y="47" width="98" height="25" rx="6" fill="#ffffff" fill-opacity=".06" /><text x="32" y="64" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="14">Examples</text>
+ <g transform="translate(242 15)">
+  <text x="24" y="14" fill="#d1bcfd" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">A100</text><text x="108" y="14" fill="#d1bcfd" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">80G</text><text x="185" y="14" fill="#d1bcfd" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">7543</text><text x="266" y="14" fill="#d1bcfd" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">128G</text><text x="350" y="14" fill="#d1bcfd" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">100G</text>
+  <g transform="translate(0 25)"><rect width="78" height="34" rx="6" fill="#ffffff" fill-opacity=".06" /><rect width="78" height="27" y="7" rx="6" fill="#9382c4" /><text x="14" y="23" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">78%</text></g>
+  <g transform="translate(84 25)"><rect width="78" height="34" rx="6" fill="#ffffff" fill-opacity=".06" /><rect width="78" height="17" y="17" rx="6" fill="#9382c4" /><text x="14" y="23" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">50%</text></g>
+  <g transform="translate(168 25)"><rect width="78" height="34" rx="6" fill="#ffffff" fill-opacity=".06" /><rect width="78" height="12" y="22" rx="6" fill="#9382c4" /><text x="14" y="23" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">34%</text></g>
+  <g transform="translate(252 25)"><rect width="78" height="34" rx="6" fill="#ffffff" fill-opacity=".06" /><rect width="78" height="9" y="25" rx="6" fill="#9382c4" /><text x="14" y="23" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">25%</text></g>
+  <g transform="translate(336 25)"><rect width="78" height="34" rx="6" fill="#ffffff" fill-opacity=".06" /><rect width="78" height="7" y="27" rx="6" fill="#9382c4" /><text x="14" y="23" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="600">20%</text></g>
+ </g>
+ <rect x="1080" y="26" width="106" height="36" rx="8" fill="#ffffff" fill-opacity=".06" /><text x="1103" y="50" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="17">Edge  2</text>
+ <rect x="1198" y="26" width="126" height="36" rx="8" fill="#ffffff" fill-opacity=".06" /><text x="1217" y="50" fill="#e7e0e8" font-family="DejaVu Sans, sans-serif" font-size="17">Tasks  2</text>
+</g>
+<text x="48" y="622" fill="#a7a1b3" font-family="DejaVu Sans, sans-serif" font-size="14">Synthetic demonstration · No telemetry · Source-only install · MIT</text>
+</svg>

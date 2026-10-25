@@ -1,0 +1,35 @@
+{
+  "modules": {
+    "remote": true,
+    "tasks": true,
+    "edge": true,
+    "file_pins": true,
+    "folder_tabs": false,
+    "clipboard_pins": false,
+    "previews": false
+  },
+  "privacy": {
+    "redact_hosts": true
+  },
+  "remote": {
+    "interval": 3,
+    "disk_paths": []
+  },
+  "tasks": {
+    "app_id": "com.mitchellh.ghostty",
+    "label": "Tasks"
+  },
+  "edge": {
+    "app_id": "microsoft-edge",
+    "label": "Edge"
+  },
+  "display": "",
+  "theme": {
+    "background": "#211f24",
+    "alpha": 0.28,
+    "text": "#e7e0e8",
+    "primary": "#d1bcfd",
+    "outline": "#948f99",
+    "font": "sans-serif"
+  }
+}

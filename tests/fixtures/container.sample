@@ -1,0 +1,29 @@
+@@MODEL
+synthetic-node
+AMD EPYC 7543
+16
+@@GPU
+0, NVIDIA A100 80GB PCIe, 40960, 81920, 78
+@@MEMORY
+MemTotal: 33554432 kB
+MemAvailable: 16777216 kB
+limit 8589934592 
+current 3221225472 
+stat total_inactive_file 1073741824 rss 2147483648 
+@@LIMITS
+quota 200000 
+period 100000 
+@@DISKS
+Filesystem 1024-blocks Used Available Capacity Mounted on
+/dev/example 104857600 20971520 83886080 20% /
+Filesystem 1024-blocks Used Available Capacity Mounted on
+/dev/example 104857600 20971520 83886080 20% /
+@@CPU_START
+cpu 100 0 100 800 0 0 0 0
+uptime 1000.00 0
+usage_ns 1000000000 
+@@CPU_END
+cpu 110 0 110 880 0 0 0 0
+uptime 1000.25 0
+usage_ns 1250000000 
+@@END

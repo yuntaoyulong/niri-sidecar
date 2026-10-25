@@ -1,0 +1,141 @@
+{
+  "theme": {
+    "output": "",
+    "background": "#47211f24",
+    "text": "#e7e0e8",
+    "primary": "#d1bcfd",
+    "outline": "#66948f99",
+    "font": "sans-serif",
+    "dockWidth": 300,
+    "dockBottom": 2,
+    "dockHeight": 56,
+    "bottom": 15,
+    "demo": true,
+    "modules": {
+      "remote": true,
+      "tasks": true,
+      "edge": true,
+      "file_pins": true,
+      "folder_tabs": true,
+      "previews": false
+    },
+    "tasks": {
+      "app_id": "com.mitchellh.ghostty",
+      "label": "Tasks"
+    },
+    "edge": {
+      "app_id": "microsoft-edge",
+      "label": "Edge"
+    }
+  },
+  "remote": {
+    "output": "",
+    "background": "#47211f24",
+    "text": "#e7e0e8",
+    "primary": "#d1bcfd",
+    "outline": "#66948f99",
+    "font": "sans-serif",
+    "dockWidth": 300,
+    "dockBottom": 2,
+    "dockHeight": 56,
+    "bottom": 15,
+    "demo": true,
+    "modules": {
+      "remote": true,
+      "tasks": true,
+      "edge": true,
+      "file_pins": true,
+      "folder_tabs": true,
+      "previews": false
+    },
+    "tasks": {
+      "app_id": "com.mitchellh.ghostty",
+      "label": "Tasks"
+    },
+    "edge": {
+      "app_id": "microsoft-edge",
+      "label": "Edge"
+    },
+    "hosts": [
+      {
+        "key": "synthetic-gpu-lab",
+        "host": "Remote 1",
+        "hostname": "",
+        "gpus": [
+          {
+            "index": "0",
+            "name": "NVIDIA A100 80GB PCIe",
+            "used": 40960,
+            "total": 81920,
+            "utilization": 78
+          }
+        ],
+        "cpu": {
+          "model": "AMD EPYC 7543",
+          "cores": 16,
+          "percent": 34,
+          "scope": "container quota"
+        },
+        "memory": {
+          "used": 34359738368,
+          "total": 137438953472,
+          "percent": 25,
+          "scope": "container quota"
+        },
+        "disks": [
+          {
+            "mount": "/",
+            "used": 21474836480,
+            "total": 107374182400,
+            "available": 85899345920,
+            "percent": 20
+          }
+        ],
+        "updated": 0
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "id": 101,
+      "title": "Train sample model",
+      "running": true,
+      "workspace": "2",
+      "focused": false
+    },
+    {
+      "id": 102,
+      "title": "Review a patch",
+      "running": false,
+      "workspace": "3",
+      "focused": false
+    }
+  ],
+  "folders": [
+    {
+      "id": 1,
+      "title": "Examples",
+      "shown": false
+    },
+    {
+      "id": 2,
+      "title": "Downloads",
+      "shown": false
+    }
+  ],
+  "pins": [
+    {
+      "id": "synthetic-pin",
+      "mime": "text/uri-list",
+      "filename": "",
+      "created": 0,
+      "preview": "",
+      "kind": "files",
+      "title": "example.txt",
+      "detail": "Synthetic demo file",
+      "paths": [
+        "/example/example.txt"
+      ]
+    }
+  ]
+}

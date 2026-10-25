@@ -1,0 +1,25 @@
+name: Bug report
+description: Report a reproducible failure using redacted or synthetic data.
+labels: [bug]
+body:
+  - type: checkboxes
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed addresses, usernames, task titles, clipboard contents and credentials from attachments.
+          required: true
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Include expected behaviour and a short reproducer.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment and enabled modules
+      description: Niri/Quickshell versions and niri-sidecar doctor output. Do not paste raw SSH commands.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Redacted logs or a synthetic sample

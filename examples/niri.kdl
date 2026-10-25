@@ -1,0 +1,13 @@
+// Optional blur for Sidecar's actual visible surfaces.
+layer-rule {
+    match namespace="^niri-sidecar:.*$"
+    geometry-corner-radius 10
+    background-effect {
+        blur true
+        xray false
+    }
+}
+// Optional file-folder shortcut; folder hook setup is described in the README.
+binds {
+    Mod+E { spawn "niri-sidecar" "folders" "open"; }
+}

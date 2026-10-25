@@ -1,0 +1,19 @@
+name: Feature proposal
+description: Describe a concrete desktop action that could work better.
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: What action or limitation should improve?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed behaviour
+      description: A sketch, small example or implementation approach is welcome.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: How could we check it?
+      description: A useful reproducer, reference or affordable experiment.
